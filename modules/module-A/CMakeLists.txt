@@ -16,7 +16,7 @@ set(the_MODULE_NAME ${tmp_CURRENT_SOURCE_DIR_SHORT_NAME})
 
 
 #build the module executable
-set(${the_MODULE_NAME}_BUILD_executable  ON)
+set(${the_MODULE_NAME}_BUILD_executable  OFF)
 if(${the_MODULE_NAME}_BUILD_executable)
     add_executable(${the_MODULE_NAME}  ${the_MODULE_NAME}.cpp)
 else()
