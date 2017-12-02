@@ -19,6 +19,7 @@ endif()
 enable_testing()
 
 # add all runUnitTests
+file(GLOB_RECURSE TEST_SRC_LIST  ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 foreach(MODULE_NAME_TEST ${CMAKE_CURRENT_SOURCE_DIR})
     if(IS_DIRECTORY  ${MODULE_NAME_TEST})
     else()
